@@ -1,16 +1,5 @@
 @use '@src/common/styles/mixins' as mixins;
 @use '@src/common/styles/colors' as colors;
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
-
-* {
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-body {
-  overflow: hidden;
-  margin: 0;
-}
 
 .app {
   @include mixins.scrollable;
