@@ -1,4 +1,4 @@
-@import './colors.scss';
+@use '@src/common/styles/colors' as colors;
 
 @mixin flexCenter {
   display: flex;
@@ -22,19 +22,19 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 6px;
-    background: $beige1;
+    background: colors.$beige1;
 
     &:hover {
-      background-color: $beige2;
+      background-color: colors.$beige2;
     }
   }
 
   &::-webkit-scrollbar-track {
-    background: $gray4;
+    background: colors.$gray4;
   }
 
   &::-webkit-scrollbar-corner {
-    background: $gray4;
+    background: colors.$gray4;
   }
 
   &::-webkit-scrollbar-button {

@@ -1,5 +1,5 @@
-@import './common/styles/mixins.scss';
-@import './common/styles/colors.scss';
+@use '@src/common/styles/mixins' as mixins;
+@use '@src/common/styles/colors' as colors;
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
 
 * {
@@ -13,17 +13,17 @@ body {
 }
 
 .app {
-  @include scrollable;
+  @include mixins.scrollable;
   overflow: auto;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: $gray2;
+  background-color: colors.$gray2;
 
   .view {
     flex-grow: 1;
-    @include flexCenter;
+    @include mixins.flexCenter;
     min-width: 1000px;
     padding: 50px;
   }
