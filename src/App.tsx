@@ -1,6 +1,8 @@
+import { JSX } from 'react'
+
 import styles from '@src/App.module.scss'
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className={styles.app}>
       <div className={styles.view}>VIEW</div>
