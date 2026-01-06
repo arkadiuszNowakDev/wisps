@@ -21,12 +21,11 @@
     gap: 10px;
   }
 
-  span {
+  .viewTitleLabel {
     @include mixins.noSelect;
     font-weight: 700;
     font-size: 2rem;
     letter-spacing: 0.03em;
     color: colors.$white;
-    text-shadow: 2px 2px 0px colors.$violet2, 3px 3px 0px colors.$beige2;
   }
 }

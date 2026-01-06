@@ -1,6 +1,7 @@
 import { JSX, useMemo } from 'react'
 
 import styles from '@src/common/components/iconButton/IconButton.module.scss'
+import { mergeClasses } from '@src/common/helpers/stylesHelpers'
 
 type IconButtonVariant = 'white'
 
@@ -19,9 +20,7 @@ const IconButton = (props: IconButtonProps): JSX.Element => {
 
   return (
     <i
-      className={`${props.iconName} ${styles.iconButton} ${variantClassName} ${
-        props.className || ''
-      }`}
+      className={mergeClasses(props.iconName, styles.iconButton, variantClassName, props.className)}
       onClick={props.onClick}
     />
   )

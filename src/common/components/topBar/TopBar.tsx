@@ -26,7 +26,7 @@ const TopBar = (): JSX.Element => {
     // TODO: get title from slice or object according to the view type
     const title = 'Arkadiusz Nowak'
 
-    return <span>{title}</span>
+    return <span className={styles.viewTitleLabel}>{title}</span>
   }, [])
 
   return (
