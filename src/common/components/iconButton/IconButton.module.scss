@@ -1,0 +1,19 @@
+@use '@src/common/styles/colors' as colors;
+
+.iconButton {
+  cursor: pointer;
+  transition: color 0.1s;
+  font-size: 1.5rem;
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &.whiteIconButton {
+    color: colors.$white;
+
+    &:hover {
+      color: colors.$beige2;
+    }
+  }
+}
