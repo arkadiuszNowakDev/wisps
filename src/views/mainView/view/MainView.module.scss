@@ -1,0 +1,7 @@
+@use '@src/common/styles/mixins' as mixins;
+
+.mainViewContainer {
+  @include mixins.flexCenter;
+  flex-wrap: wrap;
+  gap: 20px;
+}
