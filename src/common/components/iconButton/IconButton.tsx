@@ -12,16 +12,16 @@ type IconButtonProps = {
   className?: string
 }
 
-const IconButton = (props: IconButtonProps): JSX.Element => {
+const IconButton = ({ iconName, onClick, variant, className }: IconButtonProps): JSX.Element => {
   const variantClassName = useMemo(() => {
-    const variant: IconButtonVariant = props.variant || 'white'
-    return styles[`${variant}IconButton`]
-  }, [props.variant])
+    const currentVariant: IconButtonVariant = variant || 'white'
+    return styles[`${currentVariant}IconButton`]
+  }, [variant])
 
   return (
     <i
-      className={mergeClasses(props.iconName, styles.iconButton, variantClassName, props.className)}
-      onClick={props.onClick}
+      className={mergeClasses(iconName, styles.iconButton, variantClassName, className)}
+      onClick={onClick}
     />
   )
 }
