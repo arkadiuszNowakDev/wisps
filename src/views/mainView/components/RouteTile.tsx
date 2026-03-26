@@ -1,6 +1,6 @@
 import { JSX } from 'react'
 
-import styles from '@src/views/mainView/components/routeTile/RouteTile.module.scss'
+import styles from '@src/views/mainView/components/RouteTile.module.scss'
 
 export type RouteTileProps = {
   imageSource: string
